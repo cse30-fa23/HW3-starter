@@ -42,7 +42,7 @@ int main(int argc, char **argv) {
         }
     }
 
-    /* TODO: uncomment following blok & check to make sure c argument was provided */
+    /* TODO: uncomment following block & check to make sure c argument was provided */
     /* 
     if ( -FILL IN- ) {
         // we did not receive the required c option, print usage and terminate
@@ -64,8 +64,8 @@ int main(int argc, char **argv) {
     if (buf == NULL) { // always check if malloc failed
         return EXIT_FAILURE;
     }
-
-    obuf = malloc( (-FILL IN-) * sizeof(*obuf) ); // should be based on argc, optind
+    out_cols = (-FILL IN-); // should be based on argc, optind
+    obuf = malloc( (out_cols) * sizeof(*obuf) );
     if (obuf == NULL) { // always check if malloc failed
         free(buf);
         return EXIT_FAILURE;
