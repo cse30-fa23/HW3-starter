@@ -53,20 +53,20 @@ int main(int argc, char **argv) {
     */
 
     /* pointers to arrays which will be allocated dynamically by you */
-    char **buf = NULL; /* pointer to array of pointers to the start of
+    char **colptrs = NULL; /* pointer to array of pointers to the start of
                              each field in input buffer */
-    int *obuf = NULL;  /* pointer to array of output indices */
+    int *target_cols = NULL;  /* pointer to array of output indices */
 
     // allocate arrays dynamically
     /* TODO: uncomment the block below & fill in mallocs */
     /*
-    buf = malloc( (-FILL IN-) * sizeof(*buf) ); // should be based on in_cols
-    if (buf == NULL) { // always check if malloc failed
+    colptrs = malloc( (-FILL IN-) * sizeof(*buf) ); // should be based on in_cols
+    if (colptrs == NULL) { // always check if malloc failed
         return EXIT_FAILURE;
     }
     out_cols = (-FILL IN-); // should be based on argc, optind
-    obuf = malloc( (out_cols) * sizeof(*obuf) );
-    if (obuf == NULL) { // always check if malloc failed
+    target_cols = malloc( (out_cols) * sizeof(*target_cols) );
+    if (target_cols == NULL) { // always check if malloc failed
         free(buf);
         return EXIT_FAILURE;
     }
@@ -74,7 +74,7 @@ int main(int argc, char **argv) {
 
     /* 
     TODO: process other command line arguments (list of output columns) 
-    - Fill these into obuf!
+    - Fill these into target_cols!
     */
 
     char line[MAX_LINE_LEN]; /* read buffer for processing lines in input */
@@ -92,7 +92,7 @@ int main(int argc, char **argv) {
 
     // free the memory for arrays allocated with malloc 
     /* TODO: uncomment these lines when you uncomment the mallocs above */
-    // free(buf); 
-    // free(obuf);
+    // free(colpts); 
+    // free(target_cols);
     return EXIT_SUCCESS;
 }
