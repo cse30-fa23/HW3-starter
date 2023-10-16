@@ -11,8 +11,8 @@
 # Run make DEBUG= WARN= to run without debug and warnings
 # Run make clean to clean objects
 
-EXE = reader 
-OBJS = reader.o
+EXE = extractor 
+OBJS = extractor.o
 CC = gcc
 DEBUG = -g
 WARN = -Wall -Wextra -Wformat-security -Werror
