@@ -60,14 +60,14 @@ int main(int argc, char **argv) {
     // allocate arrays dynamically
     /* TODO: uncomment the block below & fill in mallocs */
     /*
-    colptrs = malloc( (-FILL IN-) * sizeof(*buf) ); // should be based on in_cols
+    colptrs = malloc( (-FILL IN-) * sizeof(*colptrs) ); // should be based on in_cols
     if (colptrs == NULL) { // always check if malloc failed
         return EXIT_FAILURE;
     }
     out_cols = (-FILL IN-); // should be based on argc, optind
     target_cols = malloc( (out_cols) * sizeof(*target_cols) );
     if (target_cols == NULL) { // always check if malloc failed
-        free(buf);
+        free(colptrs);
         return EXIT_FAILURE;
     }
     */
