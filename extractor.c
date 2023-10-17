@@ -37,7 +37,7 @@ int main(int argc, char **argv) {
         - You will want to use atoi to convert strings to integer types
         */
         default:
-            fprintf(stderr, USAGE_FORMAT_STR, argv[0]);
+            fprintf(stderr, USAGE_FORMAT_STR, *argv);
             return EXIT_FAILURE;
         }
     }
@@ -46,7 +46,7 @@ int main(int argc, char **argv) {
     /* 
     if ( -FILL IN- ) {
         // we did not receive the required c option, print usage and terminate
-        fprintf(stderr, USAGE_FORMAT_STR, argv[0]);
+        fprintf(stderr, USAGE_FORMAT_STR, *argv);
         return EXIT_FAILURE;
 
     }
