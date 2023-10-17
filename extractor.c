@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-#define MAX_LINE_LEN 256
+#define MAX_LINE_LEN 1024 //including null terminator
 #define STATS_FORMAT_STR "Number of lines: %d\nLongest field: %d characters\n"
 #define USAGE_FORMAT_STR "ERR: expected usage is %s -c <in_cols> [-d delimiter] [-s] col1 ...\n"
 
