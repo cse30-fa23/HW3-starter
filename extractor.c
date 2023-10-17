@@ -92,7 +92,7 @@ int main(int argc, char **argv) {
 
     // free the memory for arrays allocated with malloc 
     /* TODO: uncomment these lines when you uncomment the mallocs above */
-    // free(colpts); 
+    // free(colptrs); 
     // free(target_cols);
     return EXIT_SUCCESS;
 }
